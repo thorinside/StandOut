@@ -1,8 +1,8 @@
 apply plugin: 'android-library'
 
 android {
-    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
-    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+    compileSdkVersion 19
+    buildToolsVersion '19.0.3'
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -18,5 +18,3 @@ android {
         abortOnError false
     }
 }
-
-apply from: 'https://raw.githubusercontent.com/urunimi/gradle-mvn-push/master/gradle-mvn-push.gradle'
